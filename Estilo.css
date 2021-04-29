@@ -1,0 +1,242 @@
+html{
+background: url(video/flamantenuevo.png) no-repeat center center fixed;
+-webkit-background:cover;
+-moz-background-size:cover;
+-o-background-size:cover;
+background-size: cover;
+
+}
+
+
+body{
+    margin: 0;
+    height: 100%;
+    weight:100%;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+.redondo1{
+  background: radial-gradient(red, blue);
+  border: none;
+  display: block;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  position:absolute;
+    top:80%;
+    left: 15%;
+  font-size: 3.3rem;
+  padding: 3rem 3rem;
+
+}
+
+.redondo2{
+  background: radial-gradient(red, blue);
+  border: none;
+  display: block;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  position:absolute;
+    top:80%;
+    left: 45%;
+  font-size: 3.3rem;
+  padding: 3rem 3rem;
+
+}
+
+.redondo3{
+  background: radial-gradient(red, blue);
+  border: none;
+  display: block;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  position:absolute;
+    top:80%;
+    left: 75%;
+  font-size: 3.3rem;
+  padding: 3rem 3rem;
+
+}
+
+.modoboton {
+  background: url(video/instagram.png) center;
+  background-size: 100% 100%;
+  border: none;
+  z-index: 2;
+  position:absolute;
+    top:92%;
+    left: 18%;
+}
+
+.boton {
+  background: url(video/pdf.png) center;
+  background-size: 100% 100%;
+  z-index: 2;
+  position:absolute;
+    top:92%;
+    left: 58%;
+}
+
+.credito{
+  z-index: 2;
+  position:absolute;
+  top:97%;
+  left: 43%;
+
+
+}
+
+.btn {
+
+  color: #fff;
+  font-size: 4.8rem;
+  padding: 4rem 8rem;
+  text-decoration: none;
+  border-radius: 50em;
+  text-shadow: 2px 2px 0 $subcolor;
+  &:before {
+    border-radius: 100em;
+    left: -1px;
+    top: -1px;
+}
+}
+
+.btn2 {
+
+  color: #fff;
+  font-size: 4.8rem;
+  padding: 4rem 8rem;
+  text-decoration: none;
+  border-radius: 50em;
+  text-shadow: 2px 2px 0 $subcolor;
+  &:before {
+    border-radius: 100em;
+    left: -1px;
+    top: -1px;
+}
+}
+
+
+
+
+
+.box {
+  position: absolute;
+  transform: translate(-50%,-50%);
+  top: 50%;
+  left: 50%;
+  width: 500px;
+  height: 500px;
+   display: flex;
+   flex: 1;
+   flex-direction: column;
+   justify-content: flex-start;
+   justify-content: center;
+   align-items: center;
+}
+
+.cat {
+  position: relative;
+  width: 100%;
+  max-width: 20em;
+  overflow: hidden;
+
+
+}
+.cat::before {
+  content: '';
+  display: block;
+  padding-bottom: 100%;
+}
+.cat:hover > * {
+  -webkit-animation-play-state: paused;
+          animation-play-state: paused;
+}
+.cat:active > * {
+  -webkit-animation-play-state: running;
+          animation-play-state: running;
+}
+
+.cat__head, .cat__tail, .cat__body {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  -webkit-animation: rotating 2.79s cubic-bezier(0.65, 0.54, 0.12, 0.93) infinite;
+          animation: rotating 2.79s cubic-bezier(0.65, 0.54, 0.12, 0.93) infinite;
+}
+.cat__head::before, .cat__tail::before, .cat__body::before {
+  content: '';
+  position: absolute;
+  width: 50%;
+  height: 50%;
+  background-size: 200%;
+  background-repeat: no-repeat;
+  background-image: url(video/gato.png);
+}
+
+.cat__head::before {
+  top: 0;
+  right: 0;
+  background-position: 100% 0%;
+  -webkit-transform-origin: 0% 100%;
+          transform-origin: 0% 100%;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+.cat__tail {
+  -webkit-animation-delay: .2s;
+          animation-delay: .2s;
+}
+.cat__tail::before {
+  left: 0;
+  bottom: 0;
+  background-position: 0% 100%;
+  -webkit-transform-origin: 100% 0%;
+          transform-origin: 100% 0%;
+  -webkit-transform: rotate(-30deg);
+          transform: rotate(-30deg);
+}
+
+.cat__body {
+  -webkit-animation-delay: .1s;
+          animation-delay: .1s;
+}
+.cat__body:nth-of-type(2) {
+  -webkit-animation-delay: .2s;
+          animation-delay: .2s;
+}
+.cat__body::before {
+  right: 0;
+  bottom: 0;
+  background-position: 100% 100%;
+  -webkit-transform-origin: 0% 0%;
+          transform-origin: 0% 0%;
+}
+
+@-webkit-keyframes rotating {
+  from {
+    -webkit-transform: rotate(720deg);
+            transform: rotate(720deg);
+  }
+  to {
+    -webkit-transform: none;
+            transform: none;
+  }
+}
+
+@keyframes rotating {
+  from {
+    -webkit-transform: rotate(720deg);
+            transform: rotate(720deg);
+  }
+  to {
+    -webkit-transform: none;
+            transform: none;
+  }
+}
